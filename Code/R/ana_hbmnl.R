@@ -51,7 +51,6 @@ rana_hmnl <- function(Data,Z,R=1000,keep=1,ss.b=.4, amap = NULL){
   if(is.null(amat)) amat = matrix(c(1:A,1:A),ncol=2)
   nM = max(amat[,2]) ## Number of attribtuts as defined by the amat mapping
   
-  
   ################################################################################
   
   ## allocate storage space
@@ -63,9 +62,10 @@ rana_hmnl <- function(Data,Z,R=1000,keep=1,ss.b=.4, amap = NULL){
   llkeep = matrix(double(N*R/keep),ncol=N)
   thetakeep = matrix(double(nM,(R/keep)),ncol=nM)
 
-  
   ################################################################################
   ## Starting values for beta & theta
+  
+  ## START HERE ##
   
   ## Uniform [-.01,.01]
   betaM = betaMnew = matrix(runif(N*A,-.01,.01),ncol=A) 

@@ -1,0 +1,5 @@
+setwd("~/Documents/1. Research/0. Git Projects/4. Conjoint Ensembles/Code/R")
+matrix(c(1:A,1:A),ncol=2)
+install.
+A = 12
+matrix(c(1:A,1:A),ncol=2)
